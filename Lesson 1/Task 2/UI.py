@@ -34,3 +34,4 @@ class RandomFlag(QWidget):
         r = random.randint(10, 400)
         qp.setBrush(QColor(255, 255, 0))
         qp.drawEllipse(10, 10, r, r)
+
