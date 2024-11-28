@@ -8,7 +8,6 @@ class RandomFlag(QWidget):
     def __init__(self):
         super().__init__()
         self.initUI()
-        self.base = [30, 60, 120, 30]
 
     def initUI(self):
         self.setGeometry(300, 300, 300, 400)
@@ -32,6 +31,6 @@ class RandomFlag(QWidget):
 
     def draw_flag(self, qp):
         r = random.randint(10, 400)
-        qp.setBrush(QColor(255, 255, 0))
+        qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
         qp.drawEllipse(10, 10, r, r)
 
